@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('/assets/img/bg.png');
+    background-image: url('/assets/img/mountains.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -34,6 +34,7 @@
 
 h1{
     font-weight: 700;
+    color: #fff;
     font-size: 5rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     padding: 1.7rem;
@@ -43,6 +44,7 @@ h1{
 
 p{
     max-width: 600px;
+    color: #fff;
     line-height: 1.5;
     padding: 0.8rem;
     font-size: 18px;
@@ -84,7 +86,7 @@ p{
 }
 
 .second{
-    background-image: url('/assets/img/mountains.jpg');
+    background-image: url('/assets/img/bg.png');
     background-attachment: fixed;
     height: 950px;
     flex-direction: row;
@@ -273,7 +275,7 @@ header{
 }
 
 .dropdown_menu.open{
-    height: 240px;
+    height: 250px;
 }
 
 .dropdown_menu li{
@@ -327,5 +329,11 @@ section#hero{
     .dropdown_menu{
         left: 2rem;
         width: unset;
+    }
+}
+
+@media (max-width: 576px) {
+    .second .card .info{
+        width: 100%;
     }
 }
