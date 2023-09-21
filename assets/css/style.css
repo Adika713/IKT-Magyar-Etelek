@@ -18,10 +18,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('/assets/img/background.jpg');
+    background-image: url('/assets/img/bg.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.blank h1{
+    color: #fff;
+    font-size: 3rem;
+    box-shadow: none;
+    padding: 1rem;
+    cursor: auto;
 }
 
 h1{
@@ -56,6 +64,17 @@ p{
 
 .container a:hover{
     background-color: #222;
+}
+
+.blank{
+    color: #323232;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .blank, .blank-2{
@@ -216,14 +235,14 @@ header{
     display: none;
 }
 
-.action-btn{
-    background-color: orange;
+.action_btn{
+    background-color: green;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
 }
