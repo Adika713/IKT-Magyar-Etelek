@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../img/mountains.jpg");
+    background-image: url("../img/background2.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -44,10 +44,16 @@ h1{
 
 p{
     max-width: 600px;
-    color: black;
+    color: #fff;
     line-height: 1.5;
     padding: 0.8rem;
     font-size: 18px;
+}
+
+
+
+.card > .info p{
+    color: black;
 }
 
 .container a{
@@ -85,18 +91,35 @@ p{
     background-color: #323232;
 }
 
-.second{
+.container.second {
     background-image: url('../img/bg.png');
     background-attachment: fixed;
-    height: 950px;
-    flex-direction: row;
+    min-height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 2.5rem;
 }
 
-
-.card{
+.card-group {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.section-title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-title h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.card {
     width: 320px;
     height: 500px;
     background-color: #fff;
@@ -104,7 +127,7 @@ p{
     justify-content: space-between;
     border-radius: 0.7rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .blank > .card{
@@ -158,6 +181,8 @@ p{
 .blank-2{
     min-height: 30vh;
 }
+
+/* Lábléc */
 
 .footer{
     color: #fff;
