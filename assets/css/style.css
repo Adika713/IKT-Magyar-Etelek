@@ -130,7 +130,7 @@ p{
     transition: all 0.3s ease;
 }
 
-.blank > .card{
+.blank > .card-group > .card{
     display: flex;
     flex-direction: column;
     width: 320px;
@@ -175,6 +175,16 @@ p{
 .card a{
     margin-bottom: 1.5rem;
     width: 70%;
+}
+
+.blank > .card-group > .card a{
+    background-color: black;
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
