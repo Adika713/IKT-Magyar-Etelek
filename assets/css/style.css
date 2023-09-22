@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('/assets/img/mountains.jpg');
+    background-image: url("../img/mountains.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -86,7 +86,7 @@ p{
 }
 
 .second{
-    background-image: url('/assets/img/bg.png');
+    background-image: url('../img/bg.png');
     background-attachment: fixed;
     height: 950px;
     flex-direction: row;
@@ -99,6 +99,19 @@ p{
     flex-direction: column;
     width: 320px;
     height: 500px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.7rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    transition: all 0.3 ease;
+}
+
+.blank > .card{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 400px;
     background-color: #fff;
     align-items: center;
     justify-content: space-between;
