@@ -17,7 +17,21 @@
             <li><a href="#etlap">Étlap</a></li>
             <li><a href="#elerhet">Elérhetőségeink</a></li>
         </ul>
-        <a href="#" class="action_btn">Rendelés!</a>
+        <a href="#" class="action_btn">Kosár</a>
+
+
+<div class="kosar-menu">
+    <h2>Kosár tartalma</h2>
+    <button class="zaras-gomb">X</button>
+    <div class="kosar-tartalom">
+        <div class="kosar-termek-lista">
+            <div class="kosar-termek">
+                <button class="torles-gomb">Törlés</button>
+            </div>
+        </div>
+    </div>
+</div>
+
         <div class="toggle_btn">
             <i class="fa-regular fa-bars"></i>
         </div>
@@ -28,7 +42,7 @@
             <li><a href="#rolunk">Rólunk</a></li>
             <li><a href="#etlap">Étlap</a></li>
             <li><a href="#elerhet">Elérhetőségeink</a></li>
-            <li><a href="#" class="action_btn">Rendelés!</a></li>
+            <li><a href="#" class="action_btn kosar-tartalom">Rendelés!</a></li>
     </div>
 </header>
 <div class="container">
@@ -162,6 +176,8 @@
 </div>
 
 <script>
+    // Leugró menü
+
     const toggleBtn = document.querySelector('.toggle_btn')
     const toggleBtnIcon = document.querySelector('.toggle_btn i')
     const dropDownMenu = document.querySelector('.dropdown_menu')
@@ -175,6 +191,123 @@
         ? 'fa-solid fa-bars'
         : 'fa-solid fa-bars'
     }
+
+
+    // Kosár részleg
+
+    const kosarGomba = document.querySelector('.action_btn');
+kosarGomba.addEventListener('click', () => {
+
+    const kosarTartalom = document.querySelector('.kosar-tartalom');
+    kosarTartalom.classList.toggle('megjelenitett');
+});
+
+
+const kosarGomb = document.querySelector('.kosar-tartalom');
+kosarGomb.addEventListener('click', () => {
+
+    const kosarMenu = document.querySelector('.kosar-menu');
+    kosarMenu.classList.toggle('megjelenitett');
+});
+
+
+
+
+
+
+    let kosar = [];
+
+    let vanTermekekAKosarban = false;
+
+
+const kosarbaTetelGombok = document.querySelectorAll('.blank > .card-group > .card a');
+kosarbaTetelGombok.forEach(gomb => {
+    gomb.addEventListener('click', (event) => {
+        event.preventDefault();
+        
+        const kartya = event.target.closest('.card');
+        const kepSrc = kartya.querySelector('.info img').src;
+        const nev = kartya.querySelector('.info h3').textContent;
+        const ar = kartya.querySelector('.info .price').textContent;
+        
+        const termek = {
+            kepSrc,
+            nev,
+            ar
+        };
+        kosar.push(termek);
+        
+        frissitKosar();
+    });
+});
+
+
+const kosarTartalomDiv = document.querySelector('.kosar-tartalom');
+const zarasGomb = document.querySelector('.zaras-gomb');
+
+
+zarasGomb.addEventListener('click', () => {
+    const kosarMenu = document.querySelector('.kosar-menu');
+    kosarMenu.classList.remove('megjelenitett');
+});
+
+function frissitKosar() {
+    const kosarTartalom = document.querySelector('.kosar-tartalom');
+    kosarTartalom.innerHTML = '';
+
+    kosar.forEach((termek, index) => {
+        const termekElem = document.createElement('div');
+        termekElem.classList.add('kosar-termek');
+        termekElem.innerHTML = `
+            <img src="${termek.kepSrc}" alt="${termek.nev}">
+            <div class="termek-info">
+                <h4>${termek.nev}</h4>
+                <p>${termek.ar}</p>
+            </div>
+            <button class="torles-gomb" data-index="${index}">Törlés</button>
+        `;
+        kosarTartalom.appendChild(termekElem);
+    });
+
+    if (kosar.length > 0) {
+        vanTermekekAKosarban = true;
+    } else {
+        vanTermekekAKosarban = false;
+    }
+
+    kezelTorlesGombok();
+}
+
+
+    const torlesGombok = document.querySelectorAll('.torles-gomb');
+    torlesGombok.forEach(gomb => {
+        gomb.addEventListener('click', (event) => {
+            const index = event.target.getAttribute('data-index');
+            kosar.splice(index, 1);
+            frissitKosar();
+        });
+    });
+
+const alapKosarGomb = document.querySelector('.action_btn');
+alapKosarGomb.addEventListener('click', () => {
+
+    const kosarMenu = document.querySelector('.kosar-menu');
+    kosarMenu.classList.toggle('megjelenitett');
+});
+
+
+function kezelTorlesGombok() {
+    const torlesGombok = document.querySelectorAll('.torles-gomb');
+    torlesGombok.forEach((gomb) => {
+        gomb.style.display = vanTermekekAKosarban ? 'block' : 'none';
+        gomb.addEventListener('click', (event) => {
+            const index = event.target.getAttribute('data-index');
+            kosar.splice(index, 1);
+            frissitKosar();
+            event.stopPropagation();
+        });
+    });
+}
 </script>
 </body>
 </html>

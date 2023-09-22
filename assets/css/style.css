@@ -356,6 +356,131 @@ section#hero{
 }
 
 
+
+/* Kosár menü */
+
+.kosar-menu {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+    overflow-y: auto;
+}
+
+.kosar-menu.megjelenitett {
+    display: block;
+}
+
+.kosar-menu h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.kosar-tartalom {
+    padding: 10px;
+}
+
+.kosar-tartalom p{
+    color: black;
+}
+
+.kosar-termek {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.kosar-termek img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+.kosar-termek h4 {
+    margin: 0;
+}
+
+.kosar-termek p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.kosar-tartalom {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.kosar-tartalom::-webkit-scrollbar {
+    width: 5px;
+}
+
+.kosar-tartalom::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.kosar-tartalom::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+.zaras-gomb {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.zaras-gomb:hover {
+    background-color: #555;
+}
+
+
+.torles-gomb {
+    background-color: #ff5555;
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    display: none;
+}
+
+.torles-gomb:hover {
+    background-color: #ff3333;
+}
+
+.torles-gomb:focus {
+    outline: none;
+}
+
+
+
+
+
 /* Responsive beállítás */
 
 @media(max-width: 992px){
