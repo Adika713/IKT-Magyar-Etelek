@@ -252,8 +252,11 @@ a:hover{
 /* HEADER részleg */
 
 header{
-    position: relative;
-    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
     background-color: #222;
 }
 
@@ -270,6 +273,10 @@ header{
 .navbar .logo a{
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.navbar .links li a.active {
+    color: orange;
 }
 
 
@@ -477,6 +484,28 @@ section#hero{
     outline: none;
 }
 
+
+/* Termékek összára */
+.kosar-menu .osszar {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.kosar-menu .osszar-text {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.kosar-menu .osszar-ertek {
+    color: green;
+}
 
 
 

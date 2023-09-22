@@ -13,8 +13,8 @@
         <div class="logo"><a href="#">DÁG</a></div>
         <ul class="links">
             <li><a href="#kezdolap">Kezdőlap</a></li>
-            <li><a href="#rolunk">Rólunk</a></li>
             <li><a href="#etlap">Étlap</a></li>
+            <li><a href="#rolunk">Rólunk</a></li>
             <li><a href="#elerhet">Elérhetőségeink</a></li>
         </ul>
         <a href="#" class="action_btn">Kosár</a>
@@ -45,13 +45,13 @@
             <li><a href="#" class="action_btn kosar-tartalom">Rendelés!</a></li>
     </div>
 </header>
-<div class="container">
+<div class="container" id="kezdolap">
     <h1>Üdvözöljük!</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dignissimos reprehenderit quos totam ipsum cumque, ullam quisquam autem veritatis sequi nulla nihil eos quam eveniet quasi soluta nam eum velit?</p>
     <a href="#">Tudj meg többet!</a>
 </div>
 
-<div class="blank">
+<div class="blank" id="etlap">
     <h1>Heti ajánlat</h1>
     <div class="card-group">
     <div class="card">
@@ -82,7 +82,7 @@
 
 </div>
 
-<div class="container second">
+<div class="container second" id="rolunk">
     <div class="section-title">
         <h1>További konyhafőnökeink</h1>
     </div>
@@ -123,7 +123,7 @@
 </div>
 
 <div class="blank-2">
-    <div class="footer">
+    <div class="footer" id="elerhet">
         <div class="colomn">
             <h3>Étlap</h3>
             <ul>
@@ -308,6 +308,52 @@ function kezelTorlesGombok() {
         });
     });
 }
+
+
+
+const navigationLinks = document.querySelectorAll('.navbar .links li a');
+
+function highlightNavigationLink() {
+    const scrollPosition = window.scrollY;
+
+    let isLinkClicked = false;
+
+    navigationLinks.forEach((link) => {
+        const sectionId = link.getAttribute('href').substring(1);
+        const section = document.getElementById(sectionId);
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            link.classList.add('active');
+            if (isLinkClicked) {
+                link.click();
+            }
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', highlightNavigationLink);
+
+navigationLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+        navigationLinks.forEach((navLink) => {
+            navLink.classList.remove('active');
+        });
+        link.classList.add('active');
+
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+        });
+
+        isLinkClicked = true;
+    });
+});
 </script>
 </body>
 </html>
