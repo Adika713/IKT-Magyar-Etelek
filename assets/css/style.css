@@ -208,6 +208,15 @@ header .hamburger{
     position: relative;
     text-align: center;
     align-items: center;
-    font-size: 68px;
+    font-size: 80px;
     margin: auto 0;
+    padding-top: 250px;
+  }
+
+  main>div>p{
+    display: block;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
   }
