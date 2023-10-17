@@ -211,3 +211,37 @@ header .hamburger{
     font-size: 68px;
     margin: auto 0;
   }
+  section{
+    height: 200px;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .reggeli{
+    background-color: blue;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ebed{
+    background-color: yellow;
+  }
+  .vacsora{
+    background-color: purple;
+  }
+  .reggeli img{
+    object-fit: contain;
+    height: 200px;
+  }
+  .reggeli h2{
+    
+    display: block;
+    top: 100;
+    text-align: left;
+    width: 420px;
+  }
+  section div{
+    display: flex;
+  }
