@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 nav {
     display: flex;
@@ -360,18 +361,19 @@ header .hamburger{
   .kedd-reggeli div p{
     font-size: 30px;
     margin: auto 10px;
+    margin-left: 120px;
   }
 
   .kedd-ebed div p{
     font-size: 30px;
     margin: auto 10px;
-    margin-left: 54px;
+    margin-left: 100px;
   }
 
   .kedd-vacsora div p{
     font-size: 30px;
     margin: auto 16px;
-    margin-left: 140px;
+    margin-left: 200px;
   }
 
   .kedd-vacsora h2{
@@ -442,18 +444,19 @@ header .hamburger{
   .szerda-reggeli div p{
     font-size: 30px;
     margin: auto 10px;
+    margin-left: 180px;
   }
 
   .szerda-ebed div p{
     font-size: 30px;
     margin: auto 10px;
-    margin-left: 54px;
+    margin-left: 147px;
   }
 
   .szerda-vacsora div p{
     font-size: 30px;
     margin: auto 16px;
-    margin-left: 140px;
+    margin-left: 118px;
   }
 
   .szerda-vacsora h2{
@@ -480,7 +483,7 @@ header .hamburger{
     align-items: center;
   }
 
-  .csutrotok-vacsora{
+  .csutortok-vacsora{
     background-color: white;
     border: 3px solid black;
     display: flex;
@@ -524,18 +527,19 @@ header .hamburger{
   .csutortok-reggeli div p{
     font-size: 30px;
     margin: auto 10px;
+    margin-left: 200px;
   }
 
   .csutortok-ebed div p{
     font-size: 30px;
     margin: auto 10px;
-    margin-left: 54px;
+    margin-left: 200px;
   }
 
   .csutortok-vacsora div p{
     font-size: 30px;
     margin: auto 16px;
-    margin-left: 140px;
+    margin-left: 110px;
   }
 
   .csutortok-vacsora h2{
@@ -606,18 +610,19 @@ header .hamburger{
   .pentek-reggeli div p{
     font-size: 30px;
     margin: auto 10px;
+    margin-left: 150px;
   }
 
   .pentek-ebed div p{
     font-size: 30px;
     margin: auto 10px;
-    margin-left: 54px;
+    margin-left: 125px;
   }
 
   .pentek-vacsora div p{
     font-size: 30px;
     margin: auto 16px;
-    margin-left: 140px;
+    margin-left: 150px;
   }
 
   .pentek-vacsora h2{
@@ -655,6 +660,7 @@ header .hamburger{
   .szombat-ebed img{
     object-fit: contain;
     height: 200px;
+    width: 600px;
   }
   .szombat-vacsora{
     background-color: green;
@@ -688,18 +694,19 @@ header .hamburger{
   .szombat-reggeli div p{
     font-size: 30px;
     margin: auto 10px;
+    margin-left: 150px;
   }
 
   .szombat-ebed div p{
     font-size: 30px;
     margin: auto 10px;
-    margin-left: 54px;
+    margin-left: 170px;
   }
 
   .szombat-vacsora div p{
     font-size: 30px;
     margin: auto 16px;
-    margin-left: 140px;
+    margin-left: 170px;
   }
 
   .szombat-vacsora h2{
@@ -712,4 +719,1153 @@ header .hamburger{
 
   section div{
     display: flex;
+  }
+
+
+
+  @media (max-width: 1800px){
+    *{
+      margin: 0; 
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+  }
+  
+  nav{
+      display: none;
+    }
+    header{
+      align-items: center;
+      background-color: red;
+      height: 150px;
+      padding: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: red;
+      height: 150px;
+      padding: 10px;
+      flex-direction: column;
+    }
+  
+    header h1{
+      display: block;
+      position: relative;
+      text-align: center;
+      align-items: center;
+      top: 40px;
+      color: #fff;
+      font-size: 50px;
+    }
+  
+    header .hamburger{
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      font-size: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    header .hamburger-bezaras{
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      font-size: 50px;
+      color: white;
+      cursor: pointer;
+    }
+    header .hetfo-hamburger{
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      font-size: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    main a{
+      display: block;
+      text-align: center;
+      margin-top: 45px;
+      margin-bottom: 30px;
+      font-size: 50px;
+      color: black;
+    }
+  
+    main a:hover{
+      color: yellow;
+      border-radius: 10px;
+    }
+  
+    footer{
+      background-color: green;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 200px;
+      padding: 10px;
+      width: 100%;
+      flex-direction: column;
+      position: sticky;
+    }
+  
+    footer p{
+      display: block;
+      position: relative;
+      text-align: center;
+      align-items: center;
+      top: 50px;
+      color: #fff;
+      font-size: 40px;
+    }
+  
+    main{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    main h2{
+      text-align: center;
+      font-size: 50px;
+    }
+  }
+
+
+  @media (max-width: 783px){
+    section{
+      height: 200px;
+      width: 70%;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    /*hetfo*/
+    .hetfo-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .hetfo-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .hetfo-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .hetfo-ebed img{
+      object-fit: contain;
+      height: 200px;
+    }
+    .hetfo-vacsora{
+      background-color: green;
+    }
+    .hetfo-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .hetfo-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .hetfo-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .hetfo-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+      object-fit: contain;
+    }
+  
+    .hetfo-reggeli p{
+      font-size: 30px;
+      margin: auto 10px;
+      object-fit: contain;
+    }
+  
+    .hetfo-ebed p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 54px;
+      object-fit: contain;
+    }
+  
+    .hetfo-vacsora p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 140px;
+      object-fit: contain;
+    }
+  
+    .hetfo-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    /*kedd*/
+    .kedd-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .kedd-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .kedd-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .kedd-ebed img{
+      object-fit: contain;
+      height: 200px;
+    }
+    .kedd-vacsora{
+      background-color: green;
+    }
+    .kedd-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .kedd-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .kedd-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .kedd-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .kedd-reggeli div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 120px;
+    }
+  
+    .kedd-ebed div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 100px;
+    }
+  
+    .kedd-vacsora div p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 200px;
+    }
+  
+    .kedd-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    /*szerda*/
+    .szerda-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .szerda-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .szerda-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .szerda-ebed img{
+      object-fit: contain;
+      height: 200px;
+    }
+    .szerda-vacsora{
+      background-color: green;
+    }
+    .szerda-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .szerda-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .szerda-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .szerda-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .szerda-reggeli div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 180px;
+    }
+  
+    .szerda-ebed div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 147px;
+    }
+  
+    .szerda-vacsora div p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 118px;
+    }
+  
+    .szerda-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    /*csütörtök*/
+    .csutortok-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .csutortok-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .csutortok-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .csutortok-ebed img{
+      object-fit: contain;
+      height: 200px;
+    }
+    .csutortok-vacsora{
+      background-color: green;
+    }
+    .csutortok-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .csutortok-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .csutortok-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .csutortok-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .csutortok-reggeli div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 200px;
+    }
+  
+    .csutortok-ebed div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 200px;
+    }
+  
+    .csutortok-vacsora div p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 110px;
+    }
+  
+    .csutortok-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    /*pentek*/
+    .pentek-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .pentek-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .pentek-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .pentek-ebed img{
+      object-fit: contain;
+      height: 200px;
+    }
+    .pentek-vacsora{
+      background-color: green;
+    }
+    .pentek-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .pentek-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .pentek-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .pentek-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .pentek-reggeli div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 150px;
+    }
+  
+    .pentek-ebed div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 125px;
+    }
+  
+    .pentek-vacsora div p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 150px;
+    }
+  
+    .pentek-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    /*szombat*/
+    .szombat-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .szombat-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .szombat-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .szombat-ebed img{
+      object-fit: contain;
+      height: 200px;
+      width: 600px;
+    }
+    .szombat-vacsora{
+      background-color: green;
+    }
+    .szombat-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .szombat-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .szombat-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .szombat-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .szombat-reggeli div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 150px;
+    }
+  
+    .szombat-ebed div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 170px;
+    }
+  
+    .szombat-vacsora div p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 170px;
+    }
+  
+    .szombat-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    section div{
+      display: flex;
+    }
+  }
+
+  @media (max-width: 451px){
+    section{
+      height: 200px;
+      width: 70%;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    /*hetfo*/
+    .hetfo-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .hetfo-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .hetfo-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .hetfo-ebed img{
+      object-fit: contain;
+      height: 200px;
+    }
+    .hetfo-vacsora{
+      background-color: green;
+    }
+    .hetfo-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .hetfo-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .hetfo-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .hetfo-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+      object-fit: contain;
+    }
+  
+    .hetfo-reggeli p{
+      font-size: 30px;
+      margin: auto 10px;
+      object-fit: contain;
+    }
+  
+    .hetfo-ebed p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 54px;
+      object-fit: contain;
+    }
+  
+    .hetfo-vacsora p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 140px;
+      object-fit: contain;
+    }
+  
+    .hetfo-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    /*kedd*/
+    .kedd-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .kedd-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .kedd-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .kedd-ebed img{
+      object-fit: contain;
+      height: 200px;
+    }
+    .kedd-vacsora{
+      background-color: green;
+    }
+    .kedd-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .kedd-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .kedd-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .kedd-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .kedd-reggeli div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 120px;
+    }
+  
+    .kedd-ebed div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 100px;
+    }
+  
+    .kedd-vacsora div p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 200px;
+    }
+  
+    .kedd-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    /*szerda*/
+    .szerda-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .szerda-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .szerda-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .szerda-ebed img{
+      object-fit: contain;
+      height: 200px;
+    }
+    .szerda-vacsora{
+      background-color: green;
+    }
+    .szerda-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .szerda-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .szerda-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .szerda-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .szerda-reggeli div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 180px;
+    }
+  
+    .szerda-ebed div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 147px;
+    }
+  
+    .szerda-vacsora div p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 118px;
+    }
+  
+    .szerda-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    /*csütörtök*/
+    .csutortok-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .csutortok-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .csutortok-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .csutortok-ebed img{
+      object-fit: contain;
+      height: 200px;
+    }
+    .csutortok-vacsora{
+      background-color: green;
+    }
+    .csutortok-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .csutortok-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .csutortok-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .csutortok-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .csutortok-reggeli div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 200px;
+    }
+  
+    .csutortok-ebed div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 200px;
+    }
+  
+    .csutortok-vacsora div p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 110px;
+    }
+  
+    .csutortok-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    /*pentek*/
+    .pentek-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .pentek-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .pentek-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .pentek-ebed img{
+      object-fit: contain;
+      height: 200px;
+    }
+    .pentek-vacsora{
+      background-color: green;
+    }
+    .pentek-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .pentek-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .pentek-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .pentek-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .pentek-reggeli div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 150px;
+    }
+  
+    .pentek-ebed div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 125px;
+    }
+  
+    .pentek-vacsora div p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 150px;
+    }
+  
+    .pentek-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    /*szombat*/
+    .szombat-reggeli{
+      background-color: red;    
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .szombat-ebed{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .szombat-vacsora{
+      background-color: white;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .szombat-ebed img{
+      object-fit: contain;
+      height: 200px;
+      width: 600px;
+    }
+    .szombat-vacsora{
+      background-color: green;
+    }
+    .szombat-reggeli img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .szombat-vacsora img{
+      object-fit: contain;
+      height: 200px;
+    }
+  
+    .szombat-reggeli h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .szombat-ebed h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    .szombat-reggeli div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 150px;
+    }
+  
+    .szombat-ebed div p{
+      font-size: 30px;
+      margin: auto 10px;
+      margin-left: 170px;
+    }
+  
+    .szombat-vacsora div p{
+      font-size: 30px;
+      margin: auto 16px;
+      margin-left: 170px;
+    }
+  
+    .szombat-vacsora h2{
+      margin-left: 20px;
+      display: block;
+      top: 100;
+      text-align: left;
+      width: 420px;
+    }
+  
+    section div{
+      display: flex;
+    }
   }
