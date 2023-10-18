@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
     text-decoration: none;
 }
 nav {
@@ -220,28 +219,86 @@ header .hamburger{
     text-align: center;
   }
   .reggeli{
-    background-color: blue;    
+    background-color: red;    
+    border: 3px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .ebed{
-    background-color: yellow;
+    background-color: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .vacsora{
+    background-color: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ebed img{
+    object-fit: contain;
+    height: 200px;
   }
   .vacsora{
-    background-color: purple;
+    background-color: green;
   }
   .reggeli img{
     object-fit: contain;
     height: 200px;
   }
+
+  .vacsora img{
+    object-fit: contain;
+    height: 200px;
+  }
+
   .reggeli h2{
-    
+    margin-left: 20px;
     display: block;
     top: 100;
     text-align: left;
     width: 420px;
   }
+
+  .ebed h2{
+    margin-left: 20px;
+    display: block;
+    top: 100;
+    text-align: left;
+    width: 420px;
+  }
+
+  .reggeli div p{
+    font-size: 30px;
+    margin: auto 10px;
+  }
+
+  .ebed div p{
+    font-size: 30px;
+    margin: auto 10px;
+    margin-left: 54px;
+  }
+
+  .vacsora div p{
+    font-size: 30px;
+    margin: auto 16px;
+    margin-left: 140px;
+  }
+
+  .vacsora h2{
+    margin-left: 20px;
+    display: block;
+    top: 100;
+    text-align: left;
+    width: 420px;
+  }
+
   section div{
     display: flex;
   }
