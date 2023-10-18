@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (isMenuOpen) {
         // Nyitott állapotban vagyunk, átirányítjuk az oldalt
         setTimeout(() => {
-          window.location.href = "dropdown-menu/ipad-menu-dropdown.html";
+          window.location.href = "../dropdown-menu/ipad-menu-dropdown.html";
         }, 300); // Az időpontot az átmenet időzítőjéhez kell igazítani
       }
     });
