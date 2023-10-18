@@ -42,3 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+
+
+  document.getElementById('playButton').addEventListener('click', function() {
+    var audio = new Audio('audio/himnusz.mp3');
+    audio.play();
+  });

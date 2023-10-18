@@ -220,3 +220,19 @@ header .hamburger{
     align-items: center;
     padding-top: 50px;
   }
+
+  #playButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Zöld szín példa, változtasd meg az igényeid szerint */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 900px;
+}
+
+#playButton:hover {
+    background-color: #45a049; /* Sötétebb zöld a hover állapotban */
+}

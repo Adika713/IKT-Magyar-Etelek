@@ -914,14 +914,14 @@ header .hamburger{
       object-fit: contain;
     }
   
-    .hetfo-ebed p{
+    .hetfo-ebed div p{
       font-size: 30px;
       margin: auto 10px;
       margin-left: 54px;
       object-fit: contain;
     }
   
-    .hetfo-vacsora p{
+    .hetfo-vacsora div p{
       font-size: 30px;
       margin: auto 16px;
       margin-left: 140px;
