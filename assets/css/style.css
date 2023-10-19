@@ -185,6 +185,7 @@ header .hamburger{
   main{
     height: 500px;
     background-color: white;
+    text-align: center;
   }
 
   body{
@@ -221,18 +222,30 @@ header .hamburger{
     padding-top: 50px;
   }
 
-  #playButton {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #4CAF50; /* Zöld szín példa, változtasd meg az igényeid szerint */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    margin-top: 30px;
-    margin-left: 900px;
-}
+  canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 
-#playButton:hover {
-    background-color: #45a049; /* Sötétebb zöld a hover állapotban */
-}
+  #Canvas{
+    display: none;
+  }
+
+  .tuzijatekGomb{
+    border: 2px solid black;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(red 0 33%, white 33% 66%, green 66% 100%);
+  }

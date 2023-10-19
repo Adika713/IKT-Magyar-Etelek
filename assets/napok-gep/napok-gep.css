@@ -838,9 +838,9 @@ header .hamburger{
   }
 
 
-  @media (max-width: 1070px){
+  @media (max-width: 1550px){
     section{
-      height: 200px;
+      height: auto;
       width: 100%;
       margin: auto;
       margin-top: 10px;
@@ -860,7 +860,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -869,7 +869,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -892,20 +892,17 @@ header .hamburger{
     }
   
     .hetfo-reggeli h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
     .hetfo-ebed h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
-      object-fit: contain;
     }
   
     .hetfo-reggeli div p{
@@ -917,22 +914,19 @@ header .hamburger{
     .hetfo-ebed div p{
       font-size: 30px;
       margin: auto 10px;
-      margin-left: 54px;
       object-fit: contain;
     }
   
     .hetfo-vacsora div p{
       font-size: 30px;
       margin: auto 16px;
-      margin-left: 140px;
       object-fit: contain;
     }
   
     .hetfo-vacsora h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
@@ -941,7 +935,7 @@ header .hamburger{
       background-color: red;    
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -949,7 +943,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -958,7 +952,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -981,44 +975,38 @@ header .hamburger{
     }
   
     .kedd-reggeli h2{
-      margin-left: 20px;
       display: block;
-      top: 100;
-      text-align: left;
+      margin-bottom: 10px;
+      text-align: center;
       width: 420px;
     }
   
     .kedd-ebed h2{
-      margin-left: 20px;
       display: block;
-      top: 100;
-      text-align: left;
+      margin-bottom: 10px;
+      text-align: center;
       width: 420px;
     }
   
     .kedd-reggeli div p{
       font-size: 30px;
       margin: auto 10px;
-      margin-left: 120px;
     }
   
     .kedd-ebed div p{
       font-size: 30px;
       margin: auto 10px;
-      margin-left: 100px;
     }
   
     .kedd-vacsora div p{
       font-size: 30px;
       margin: auto 16px;
-      margin-left: 200px;
     }
   
     .kedd-vacsora h2{
-      margin-left: 20px;
       display: block;
-      top: 100;
-      text-align: left;
+      margin-bottom: 10px;
+      text-align: center;
       width: 420px;
     }
   
@@ -1027,7 +1015,7 @@ header .hamburger{
       background-color: red;    
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1035,7 +1023,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1044,7 +1032,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1067,44 +1055,38 @@ header .hamburger{
     }
   
     .szerda-reggeli h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
     .szerda-ebed h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
     .szerda-reggeli div p{
       font-size: 30px;
       margin: auto 10px;
-      margin-left: 180px;
     }
   
     .szerda-ebed div p{
       font-size: 30px;
       margin: auto 10px;
-      margin-left: 147px;
     }
   
     .szerda-vacsora div p{
       font-size: 30px;
       margin: auto 16px;
-      margin-left: 118px;
     }
   
     .szerda-vacsora h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
@@ -1113,7 +1095,7 @@ header .hamburger{
       background-color: red;    
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1121,7 +1103,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1130,7 +1112,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1153,44 +1135,38 @@ header .hamburger{
     }
   
     .csutortok-reggeli h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
     .csutortok-ebed h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
     .csutortok-reggeli div p{
       font-size: 30px;
       margin: auto 10px;
-      margin-left: 200px;
     }
   
     .csutortok-ebed div p{
       font-size: 30px;
       margin: auto 10px;
-      margin-left: 200px;
     }
   
     .csutortok-vacsora div p{
       font-size: 30px;
       margin: auto 16px;
-      margin-left: 110px;
     }
   
     .csutortok-vacsora h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
@@ -1199,7 +1175,7 @@ header .hamburger{
       background-color: red;    
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1207,7 +1183,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1216,7 +1192,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1239,44 +1215,38 @@ header .hamburger{
     }
   
     .pentek-reggeli h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
     .pentek-ebed h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
     .pentek-reggeli div p{
       font-size: 30px;
       margin: auto 10px;
-      margin-left: 150px;
     }
   
     .pentek-ebed div p{
       font-size: 30px;
       margin: auto 10px;
-      margin-left: 125px;
     }
   
     .pentek-vacsora div p{
       font-size: 30px;
       margin: auto 16px;
-      margin-left: 150px;
     }
   
     .pentek-vacsora h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
@@ -1285,7 +1255,7 @@ header .hamburger{
       background-color: red;    
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1293,7 +1263,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1302,7 +1272,7 @@ header .hamburger{
       background-color: white;
       border: 3px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
     }
@@ -1326,44 +1296,38 @@ header .hamburger{
     }
   
     .szombat-reggeli h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
     .szombat-ebed h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
     .szombat-reggeli div p{
       font-size: 30px;
       margin: auto 10px;
-      margin-left: 150px;
     }
   
     .szombat-ebed div p{
       font-size: 30px;
       margin: auto 10px;
-      margin-left: 170px;
     }
   
     .szombat-vacsora div p{
       font-size: 30px;
       margin: auto 16px;
-      margin-left: 170px;
     }
   
     .szombat-vacsora h2{
-      margin-left: 20px;
+      margin-bottom: 10px;
       display: block;
-      top: 100;
-      text-align: left;
+      text-align: center;
       width: 420px;
     }
   
